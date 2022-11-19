@@ -4,16 +4,16 @@ layout: layouts/base.njk
 css: index.css
 ---
 
-{% for page in search.pages('post') %}
-    <div class='content'>
+{% for page in search.pages("post") %}
+    <div class="content">
         {{ page.data.content | md | safe }}
     </div>
-    <div class='content-date'>
-        <a href='{{ page.data.url }}'>
-            {{ page.data.date | date('MM/dd/yyyy') }}
+    <div class="content-date">
+        <a href="{{ page.data.url }}">
+            {{ page.data.date | date("MM/dd/yyyy") }}
         </a>
     </div>
     {% if not loop.last %}
-        <div class='divider'></div>
+        <div class="divider"></div>
     {% endif %}
 {% endfor %}
