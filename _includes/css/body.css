@@ -7,3 +7,21 @@ body > div {
     max-width: 400px;
     margin: 0 auto;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #212121;
+    }
+    div {
+        color: #fafafa;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #fafafa;
+    }
+    div {
+        color: #212121;
+    }
+}
