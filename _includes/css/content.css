@@ -1,0 +1,21 @@
+.content {
+    font-size: large;
+}
+
+.divider {
+    height: 1px;
+    width: 64px;
+    margin: 20% auto 10% auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    .divider {
+        background: #757575;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .divider {
+        background: #bdbdbd;
+    }
+}

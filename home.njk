@@ -4,4 +4,11 @@ layout: layouts/base.njk
 css: index.css
 ---
 
-<div>Text</div>
+{% for page in search.pages('post') %}
+    <div class='content'>
+        {{ page.data.content | md | safe }}
+    </div>
+    {% if not loop.last %}
+        <div class='divider'></div>
+    {% endif %}
+{% endfor %}

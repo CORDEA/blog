@@ -1,4 +1,5 @@
 .idea/
 _site/
 _bin/
+posts/
 *.lock
