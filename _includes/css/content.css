@@ -11,6 +11,11 @@
     }
 }
 
+.content-date {
+    font-size: medium;
+    text-align: right;
+}
+
 .divider {
     height: 1px;
     width: 64px;
