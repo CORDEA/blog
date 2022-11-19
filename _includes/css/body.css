@@ -1,0 +1,9 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: min(20%, 128px) 16px;
+}
+
+body > div {
+    max-width: 400px;
+    margin: 0 auto;
+}
