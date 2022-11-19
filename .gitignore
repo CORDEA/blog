@@ -1,1 +1,4 @@
 .idea/
+_site/
+_bin/
+*.lock
