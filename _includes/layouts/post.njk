@@ -1,0 +1,11 @@
+---
+layout: layouts/base.njk
+css: ../../index.css
+---
+
+<div class="content">
+    {{ content | md | safe }}
+</div>
+<div class="content-date">
+    {{ page.data.date | date("MM/dd/yyyy") }}
+</div>
