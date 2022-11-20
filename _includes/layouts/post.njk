@@ -9,3 +9,27 @@ css: ../../index.css
 <div class="content-date">
     {{ page.data.date | date("MM/dd/yyyy") }}
 </div>
+
+<div class="navigation">
+    {% set post = search.previousPage(url, "post") %}
+    {% if post %}
+        <span class="navigation-prev">
+            <a href="{{ post.data.url }}" rel="prev">Prev</a>
+        </span>
+    {% else %}
+        <span></span>
+    {% endif %}
+
+    <span class="navigation-home">
+        <a href="../../" rel="home">Home</a>
+    </span>
+
+    {% set post = search.nextPage(url, "post") %}
+    {% if post %}
+        <span class="navigation-next">
+        <a href="{{ post.data.url }}" rel="next">Next</a>
+        </span>
+    {% else %}
+        <span></span>
+    {% endif %}
+</div>

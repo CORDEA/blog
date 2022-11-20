@@ -33,3 +33,24 @@
         background: #bdbdbd;
     }
 }
+
+.navigation {
+    font-size: smaller;
+    margin: 20% 8px 0 8px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation > * {
+    flex: 1;
+}
+
+.navigation-home {
+    text-align: center;
+}
+
+.navigation-next {
+    text-align: right;
+}
