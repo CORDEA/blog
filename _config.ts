@@ -7,4 +7,6 @@ const site = lume();
 site.use(postcss());
 site.use(date());
 
+site.ignore('README.md');
+
 export default site;
